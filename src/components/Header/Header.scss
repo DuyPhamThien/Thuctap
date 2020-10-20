@@ -1,0 +1,29 @@
+.Header{
+    background-color: #39a3f4;
+    padding: 10px 30px 10px 10px;
+    height: 30px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 102;
+}
+#menu-button{
+    cursor: pointer;
+    vertical-align: top;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: -10px;
+    margin-right: 10px;
+    color: #ffffff;
+    user-select: none;
+    background-color: #39a3f4;
+    border: none;
+    i{
+        display: block;
+    font-size: 20px;
+    }
+   
+}
+

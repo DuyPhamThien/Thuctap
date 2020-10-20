@@ -1,0 +1,81 @@
+body a{
+    text-decoration: none;
+}
+.layout-menu-container{
+    left: 0;
+    padding: 0 0 60px 0;
+    width: 230px;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 101;
+    top: 50px;
+    overflow: auto;
+    transition: left 0.4s;
+    
+}
+.layout-menu-container.layout-menu-out{
+    left: -230px ;
+}
+
+.layout-menu-title {
+    display: block;
+    padding: 11px;
+    font-size: 16px;
+    color: #7a7a7a;
+    border-bottom: 1px solid #dddddd;
+    letter-spacing: 2px;
+}
+ .layout-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.layout-menu li a {
+    padding: 10px 12px;
+    display: block;
+}
+.layout-menu li > a{
+    ursor: pointer;
+    color: #424242;
+    display: block;
+    user-select: none;
+    width: 100%;
+}
+.layout-menu li a:hover {
+    background-color: #39a3f4;
+    color: #ffffff;
+}
+
+.layout-menu li a i {
+    font-size: 15px;
+    
+}
+.layout-menu li a i:first-child {
+    
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+}
+
+.layout-menu li a > span{
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 15px;
+    margin-left: 6px;
+}
+.icon-right{
+    float: right;
+    line-height: 22px;
+    margin-right: 15px;
+}
+.layout-submenu-exit-done{
+    display: none;
+}
+.layout-submenu-enter-done li a{
+    padding-left: 24px;
+}
+.layout-submenu-enter-done{
+    display: block;
+}
