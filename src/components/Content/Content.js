@@ -4,13 +4,16 @@ class Content extends Component {
     render() {
         return (
             <div className="layout-content">
-                <div class="layout-breadcrumb">
+                <div className="layout-breadcrumb">
                     <ul>
                         <li>
-                            <button class="p-link"><i class="fas fa-home"></i></button>
+                            <button className="p-link"><i className="fas fa-home"></i></button>
                         </li>
                         <li>/</li>
                     </ul>
+                </div>
+                <div className="layout-content-container">
+                    <h1>Hello</h1>
                 </div>
             </div>
         );

@@ -1,0 +1,25 @@
+.layout-menu li ul.layout-submenu-enter-done {
+    color: red;
+}
+.layout-submenu {
+    transition: all 0.5s;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.layout-submenu-enter-done {
+   display: block;
+}
+
+.layout-submenu-exit-done {
+   display: none;
+}
+.active-item > a .icon-right{
+    transform: rotate(-180deg);
+}
+
+.layout-menu .active-item > a{
+    color: #39a3f4;
+}
+
+

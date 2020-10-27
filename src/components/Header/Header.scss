@@ -1,16 +1,18 @@
-.Header{
+.Header {
     background-color: #39a3f4;
     padding: 10px 30px 10px 10px;
-    height: 30px;
+    height: 53px;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 102;
+    display: flex;
+    justify-content: space-between;
 }
-#menu-button{
+#menu-button {
     cursor: pointer;
     vertical-align: top;
-    height: 50px;
+    height: 51px;
     width: 50px;
     line-height: 50px;
     text-align: center;
@@ -20,10 +22,103 @@
     user-select: none;
     background-color: #39a3f4;
     border: none;
-    i{
+    transition: background-color 0.3s;
+    i {
         display: block;
-    font-size: 20px;
+        font-size: 20px;
     }
-   
+    &:hover {
+        background-color: #69b9f7;
+    }
+    &:focus {
+        outline: none;
+    }
 }
+.profile {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin-top: -10px;
+    background-color: #39a3f4;
+    border: none;
+    user-select: none;
+    color: #ffffff;
+    transition: background-color 0.3s;
+    span {
+        text-transform: uppercase;
 
+        margin-right: 8px;
+    }
+    &:hover {
+        background-color: #69b9f7;
+    }
+    &:focus {
+        outline: none;
+        background-color: #69b9f7;
+    }
+    img {
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+}
+.topbar-search {
+    margin-right: 5px;
+    background: #69b9f7;
+    color: #ffffff;
+    padding: 10px 12px;
+    input {
+        color: #ffffff;
+        display: inline-block;
+        border: none;
+        outline: none;
+        background: #69b9f7;
+    }
+
+    input::-webkit-input-placeholder {
+        color: #fff;
+    }
+    span {
+        cursor: pointer;
+        background: #69b9f7;
+    }
+}
+.dropdown-menu.dropdown-menu-on{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-menu {
+    position: absolute;
+    width: 250px;
+    background-color: #39a3f4;
+    border-top: 1px solid #0d8ced;
+    right: 0;
+    top: 100%;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all 0.3s ease-in-out;
+    .dropdown-item {
+        padding: 10px 12px;
+        i {
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            margin-right: 25px;
+            transition: all 0.3s ;
+            cursor: pointer;
+        }
+        a {
+            font-family: "Source Sans Pro", Arial, sans-serif;
+            font-size: 14px;
+            color: #ffffff;
+        }
+        &:hover{
+            background-color: #69b9f7;
+        }
+    }
+    
+}

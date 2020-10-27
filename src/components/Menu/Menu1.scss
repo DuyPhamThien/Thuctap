@@ -1,0 +1,29 @@
+.layout-wrapper.layout-horizontal .layout-menu-container {
+    padding: 0 20px;
+    width: 100%;
+    overflow: visible;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 101;
+    top: 50px;
+}
+ .layout-menu-title {
+    display: none;
+}
+ .layout-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.layout-menu > li {
+    display: inline-block;
+    position: relative;
+}
+.layout-menu > li > a {
+    padding: 12px;
+    height: 50px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s, background-color 0.3s;
+    cursor: pointer;
+    display: block;
+}
