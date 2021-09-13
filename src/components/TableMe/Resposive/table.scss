@@ -1,0 +1,231 @@
+// @import "@root/assets/css/constants";
+
+.column_sort[vector="none"]:after {
+    content: "\f0dc";
+    font-family: FontAwesome;
+    margin-left: 4px;
+    opacity: 0.5;
+}
+.column_sort[vector="asc"]:after {
+    content: "\f0de";
+    font-family: FontAwesome;
+    margin-left: 4px;
+}
+.column_sort[vector="desc"]:after {
+    content: "\f0dd";
+    font-family: FontAwesome;
+    margin-left: 4px;
+}
+.column_sort {
+    cursor: pointer;
+}
+
+.filter_item .filter_item_input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Page break */
+.page_break i {
+    background: #eaeaea;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin: 0px 2px;
+    line-height: inherit;
+    font-weight: bold;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+
+.page_break .step {
+    background: #eaeaea;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin: 0px 2px;
+    line-height: inherit;
+}
+
+.page_break .step:active,
+.page_break i:active {
+    opacity: 0.6;
+}
+
+.page_break .step:hover,
+.page_break i:hover {
+    background: #ffe38f;
+}
+
+.page_break {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.page_quantity {
+    padding: 5px;
+    width: 50px;
+    border-radius: 2px;
+    border: solid thin darkgray;
+}
+/*=============================================*/
+
+.main_table th,
+.main_table td {
+    max-width: 300px;
+    vertical-align: middle;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-color: #ced1d5;
+}
+
+.main_table th {
+    white-space: nowrap;
+    text-align: center;
+    background: #eaeced;
+}
+.main_table tr:hover {
+    box-shadow: 0px 0px 4px #007bff;
+}
+
+.modal-body {
+    text-align: initial;
+    padding: 7px;
+}
+.modal-header {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-footer {
+    padding: 7px;
+}
+
+.modal-header .close {
+    padding: 7px;
+    margin: 0px;
+}
+.modal-header h4 {
+    font-size: 14px !important;
+    font-weight: bold;
+    padding: 5px;
+}
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal-backdrop {
+    background: unset;
+}
+
+.table_function .button {
+    display: flex;
+    align-items: center;
+}
+
+.button_gallery {
+    text-align: center;
+    padding: 5px;
+    background: #1774b5;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 4px;
+}
+
+@media only screen and (min-width: 412px) {
+    // @import "@root/assets/css/constants";
+    // $font_size: $font_size_lg;
+
+    .main_table {
+        font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .filter_item.filter_item_row {
+        width: auto;
+        padding: 2px 5px;
+        min-width: 80px;
+        .filter_item_input {
+            margin-top: 0px;
+        }
+    }
+
+    .filter_item {
+        width: 150px;
+        padding: 2px 5px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        .filter_text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+        }
+
+        .filter_item_input {
+            padding: 2px 5px;
+            margin-top: 5px;
+            border-radius: 2px;
+            border: solid thin #ccc;
+        }
+    }
+
+    .filter_bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .table_box {
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* button function */
+
+    .table_func_right {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        transform: none !important;
+        top: 30px !important;
+    }
+
+    /* editor */
+    .editor_item {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .editor_item {
+        padding: 5px;
+        width: 100%;
+    }
+    .editor_item:hover .editor_item_text {
+        font-weight: bold;
+    }
+    .editor_item_input {
+        padding: 5px;
+        border-radius: 4px;
+        border: solid thin darkgray;
+    }
+    .editor_item_text {
+        padding-left: 20%;
+    }
+}
+// @media only screen and (max-width: 412px) {
+//     @import "mobile";
+// }

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Header.scss';
-import avatar from '../../imgs/download.jpg';
+import avatar from '../../imgs/Logo Phoenix Simulation.jpg';
 import {
     NavLink
 } from "react-router-dom";
+import App from '../../App';
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -19,22 +20,15 @@ class Header extends Component {
                     <button id="menu-button" onClick={() => this.props.isMenu()}><i className="fas fa-bars"></i></button>
                 </div>
                 <div>
-                    <span className="topbar-search">
-                        <input placeholder="Search" />
-                        <span className="fas fa-search"></span>
-                    </span>
+
                     <button className="profile" onClick={() => this.setState({ isOpen: !(this.state.isOpen) })}>
-                        <span >User Name</span>
+                        <span >Admin</span>
                         <img src={avatar} alt="ahihi"></img>
                         <span className=" fas fa-angle-down"></span>
                     </button>
-                    <div className={this.state.isOpen ? "dropdown-menu dropdown-menu-on" : "dropdown-menu"} >
-                        <div className="dropdown-item">
-                            <NavLink to="/" href="#"><i className="fas fa-user"></i>Action</NavLink>
-                        </div>
-                        <div className="dropdown-item">
-
-                            <NavLink to="/HorizontalMenu" href="#"><i className="fas fa-power-off"></i>Logout</NavLink>
+                    <div className={this.state.isOpen ? "dropdown-menu1 dropdown-menu-on" : "dropdown-menu1"} >
+                        <div className="dropdown-item" onClick={() => global.keycloak.logout()}>
+                            <i className="fas fa-power-off"></i>Logout
                         </div>
 
                     </div>

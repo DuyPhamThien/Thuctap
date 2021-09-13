@@ -1,5 +1,6 @@
 .layout-menu li ul.layout-submenu-enter-done {
     color: red;
+    padding: 0;
 }
 .layout-submenu {
     transition: all 0.5s;
@@ -8,18 +9,21 @@
 }
 
 .layout-submenu-enter-done {
-   display: block;
+    display: block;
 }
 
 .layout-submenu-exit-done {
-   display: none;
+    display: none;
 }
-.active-item > a .icon-right{
+.active-item1 > a .icon-right {
     transform: rotate(-180deg);
 }
 
-.layout-menu .active-item > a{
+.layout-menu .active-item > a {
     color: #39a3f4;
 }
+ul {
+    list-style: none;
 
-
+    margin: 0;
+}
